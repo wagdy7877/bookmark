@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+   <div class="container w-75">
+    <h1 class="my-3 text-black-50">Bookmarker</h1>
+    <hr>
+    <div class="bg-secondary-subtle border shadow bg-black-50 text-center py-4 my-5 ">
+      <h2>Bookmark your favorite sites</h2>
+      <label class="fw-bold" for="siteName">Site Name</label>
+      <input type="text" id="siteName" class="form-control w-75 m-auto p-2 my-2" placeholder="Bookmark Name">
+      <label class="fw-bold" for="siteUrl">Site URL</label>
+      <input type="text" id="siteUrl" class="form-control w-75 m-auto p-2 my-2" placeholder="Website URL">
+      <button class="btn btn-info my-3 p-2 px-4" id="Submit" onclick="addSite()" >Submit</button>
+    </div>
+    <input type="text" id="search" class="form-control w-50 m-auto p-2" onkeyup="searchf()" placeholder="search by bookmark name">
+    <table class="border shadow text-center table table-striped mt-5">
+      <thead>
+        <tr>
+          <td>id</td>
+          <td>name</td>
+          <td>visit</td>
+          <td>update</td>
+          <td>delete</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+ 
+      </tbody>
+
+    </table>
+    <hr>
+    <p class="text-black-50">© 2019 Bookmarker Inc.</p>
+   </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
